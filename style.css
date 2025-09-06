@@ -1,0 +1,335 @@
+body{
+    background-color: black;
+     margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+}
+/* sidebar */
+.sidebar{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.sidebar-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close{
+    display: none;
+    color: white;
+    font-size: 32px;
+    height: 10vh;
+    padding: 10px 20px;
+}
+.logo-img{
+    height: 60%;
+    width: 60%;
+}
+.small-heading{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    align-items: center;
+}
+.slogan{
+    color: red;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+}
+.quick-links h2{
+    color: white;
+    text-align: center;
+}
+.links li{
+    list-style: none; 
+}
+.links li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+}
+.About-Us{
+    display: flex;
+    flex-direction: column;
+}
+.About-Us h2{
+    color: white;
+    text-align: center;
+}
+.About-Us ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+}
+
+/* main content */
+.main-content{
+    width: 78%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.hamburger{
+    color: white;
+    display: none;
+}
+.nav-element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin-top: 15px;
+    width: 78%;
+    height: 65px;
+    background-color: #191D20;
+    gap: 10px;
+}
+form i{
+    color: #878787;
+    margin-left: 10px;
+    position: absolute;
+}
+form{
+    height: 46px;
+    border-radius: 5px;
+    background-color: #272A30;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.search input{
+    width: 620px;
+    height: 100%;
+    background-color: #272A30;
+    color: #878787;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 40px;
+}
+.red-btn{
+    height: 45px;
+    width: 156px;
+    background-color: red;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.nav-element img{
+    width: 65px;
+    height: 55px;
+    margin-right: 60px;
+}
+.hero-img{
+    margin: 20px auto;
+    padding: 85px 20px;
+}
+.hero-img img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.menu-section{
+    margin-top: -75px;
+    margin-left: 20px;
+    padding: 0 20px;
+}
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.card{
+    width: 340px;
+    height: 330px;
+    background-color: #191D20;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.card-main-img{
+    width: 340px;
+    height: 220px;
+    border-radius: 7px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-start-content{
+    width: 65%;
+}
+.food-name{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;  
+}
+.cost{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: -15px;
+}
+@media screen and (max-width:1490px){
+    form{
+        height: 46px;
+        border-radius: 5px;
+        background-color:#272A30;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .search{
+        width: 55%;
+    }
+    .slogan{
+        color: #FF2424;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        align-self: center;
+    }
+    ul li a{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+    }
+    .food-name{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+    }
+    .cost{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .card{
+        width: 225px;
+        height: 200px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .card-main-img{
+        width: 205px;
+        height: 115px;
+        border-radius: 7px;
+    }
+    .hero-img img{
+        width: 100%;
+        height: 50vh;
+        padding: 20px 20px 0px 20px;
+    }
+    .menu{
+        padding: 0px 25px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 980px){
+   
+    .sidebar{
+        position: fixed;
+        z-index: 2000;
+        width: 300px;
+        display: none;
+        background-color: #191D20;
+    }
+    .main-content{
+        width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .nav-element{
+        width: 100%;
+        height: 75px;
+        background-color: #191D20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        padding: 0px 20px;
+    }
+     .hamburger{
+        display: inline;
+        color: white;
+        font-size: 32px;
+    }
+    .search{
+        width: 55%;
+    }
+    .nav-element img{
+        width: 58px;
+        height: 58px;
+    }
+    .card-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+        width: 100%;
+    }
+    .card-main-img{
+        width: 205px;
+        height: 115px;
+        border-radius: 7px;
+    }
+    .card{
+        width: 225px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:740px){
+    .card{
+        width: 300px;
+        height: 250px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .card-main-img{
+        width: 280px;
+        height: 165px;
+        border-radius: 7px;
+    }
+}
+
